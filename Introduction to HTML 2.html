@@ -1,0 +1,146 @@
+How to setup an HTML File
+
+Hyper Text Markup Language files require certain elements to set up the document properly
+You can let web broswers know you are using HTML by starting your document
+with a document type declaration
+
+Declaration looks like this
+	<!DOCTYPE html>
+
+This declartion is an instruction AND IT MUST be the first line of code in your HTML Document
+It tells the broswer what type of document to expect along with the version if HTML is being used
+HTML5 is the current standard
+
+HTML code is always saved in a file with an .html extension
+
+DOCTYPE declarations are only required for html based documents. Other JavaScript or CSS files are actually loaded into the page with <link> or tags. 
+These tags signify the file type to the browser thereby allowing the browser to properly parse the file.
+
+Even though the HTML5 doctype declaration is dramatically simplified, it is still required so that the browser knows which version of HTML is being used. 
+Once it knows , then it is able to render the document in “strict mode.” If no doctype is declared, then it can still tell that the document 
+is HTML based on the file extension and <html></html> tag pair, but since it does not know which version of HTML is being used, it renders the document in “quirks mode.”
+
+The <!Doctype html> Provides the broswer with the type of document and html version to expect
+but it doesnt actually add any code to the structure or content.
+
+To create html Strcture and content we must add opening and closing <html></html> tags after delcaring
+<!DOCTYPE html>
+
+anything between the opening and closing <html></html> tags will be interepreted as HTML Code
+
+Including optional tags enhances readability, improves cross-browser support, and takes some burden off of the browser
+
+the <head> element goes above our <body> element
+the <head> element contains the metadata for the webpage.
+Metadata is information about the page that isnt displayed directly on the webpage.
+The metadeata in the <head> is information about the page itself.
+<head></head>
+
+Metadata not displayed on a page but behind the scenes it can be used by other software 
+(web crawlers, search engines, browsers, etc.) to process, encode, extract or index all sorts of interesting information 
+(geographic coordinates, calendar events, contact info, etc.). What’s more, businesses are often interested in using metadata to improve SEO or Search Engine Optimization.
+
+HTML is read by the browser from the top of the document to bottom of the document. Important data (language, characters, frameworks, etc.) 
+is stored in the section and should be as close to the top of the document as possible so the browser knows how the page should be displayed.
+
+A browser's tab displays the title specified in the <title> tag. 
+The <title> tag is always inside of the <head>
+
+<!DOCTYPE html>, the declaration specifying the version of HTML for the browser
+The <html> tags that enclose all of your HTML code
+The <head> tag that contains the metadata of a webpage, such as its <title>
+
+You can add links to a web page by adding an Anchor element <a></a> and including the text of the link between the tags
+The anchor element is incomplete with out the href attribute.
+Href stands for hyperlink reference and is used to link to a path or address to where a file is located
+<a href= link to webpage> with explantion here</a>
+
+The target attribute specifices how a link should open
+
+For a link to open in a new window, the target attribute requires a value of _blank. 
+The target attribute can be added directly to the opening tag of the anchor element, just like the href attribute.
+
+Setting the target attribute to "_blank" instructs the browser to open the page in a new window.
+
+there are 4 different values the target attribute can have: _self, _blank, _parent, or _top. 
+These values specify a browsing context or the environment in which the browser will display a document. 
+To learn about each of these values, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
+
+1._self - Loads the url into the same browsing context as the current one
+2._Blank - Loads the URL into a new browsing context. Either a tab or a new window
+3._parent - Loads the URL into the parent browsing context of the current one. If there is no parent behaves the same way as _Self
+4._top - Load the URL into the top-level browsing context (that is, the "highest" browsing context that is an ancestor of the current one, and has no parent). 
+If there is no parent, this behaves the same way as _self.
+
+When making multi-page static websites, web developers often store HTML files in the root directory, 
+or a main folder where all the files for the project are stored
+
+project-folder/
+|—— about.html
+|—— contact.html
+|—— index.html
+
+The example above shows three different files — about.html, contact.html, and index.html in one folder.
+
+HTML files are often stored in the same folder as shown above.
+If a browser is displaying one file it knows that other files are within the same folder and can link web pages toger using relative path
+
+<a href="./contact.html">Contact</a>
+
+In this example, the <a> tag is used with a relative path to link from the current HTML file to the contact.html file in the same folder
+
+A relative path is a filename that shows the path to a local file (a file on the same website such as ,/index.html)
+the ./ tells the browser the look for the file in the current folder.
+
+Absolute Paths
+https://softwareengineering.stackexchange.com/questions/294299/when-to-use-absolute-path
+https://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/
+https://internetingishard.com/html-and-css/links-and-images/#absolute-relative-and-root-relative-links
+https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files
+
+Html allows you to turn any element into a link by wrapping that element with an anchor element. 
+You can turn images into links by simply wraping the <img> element with an <a> element.
+
+<a href="https://en.wikipedia.org/wiki/Opuntia" target="_blank"><img src="#" alt="A red prickly pear fruit"/></a>
+In the example above, an image of a prickly pear has been turned into a link by wrapping the outside of the <img> element with an <a> element
+
+In order to link a target on the same page we must give the target an id.
+
+<p id="top">This is the top of the page!</p>
+<h1 id="bottom">This is the bottom! </h1
+
+in this example, the <p> element is assigned an id of "top" and the <h1> element is assigned "bottom." 
+An id can be added to most elements on a webpage
+
+An id should be descriptive to make it easier to remember the purpose of a link. 
+The target link is a string containing the # character and the target element's id.
+
+Programmers use two tools to help visualize the relationship between elements
+Whitespace and Indentation
+The position of elements in a browser is independent of the amount of whitespace or the indentation in the index.html file.
+The browser ignores white space in html files when it renders(loads) a web page.
+
+Whitespace is any character or series of characters which creates space on a page but does not display a visible mark. Common whitespace characters include tabs and spaces.
+
+Indentation is a type of horizontal whitespace strategically used to enhance the readability of our code. 
+For example, in HTML it is best practice to consistently indent our code to clearly illustrate nestings.
+
+HTML Allows you to add comments to your code
+
+Comments begin with <!-- and end with -->. Any characters in between will be ignored by your browser
+
+Including comments in your code is helpful for many reasons:
+
+They help you (and others) understand your code if you decide to come back and review it at a much later date.
+
+The <!DOCTYPE html> declaration should always be the first line of code in your HTML files. This lets the browser know what version of HTML to expect.
+The <html> element will contain all of your HTML code.
+Information about the web page, like the title, belongs within the <head> of the page.
+You can add a title to your web page by using the <title> element, inside of the head.
+A webpage's title appears in a browser's tab.
+Anchor tags (<a>) are used to link to internal pages, external pages or content on the same page.
+You can create sections on a webpage and jump to them using <a> tags and adding ids to the elements you wish to jump to.
+Whitespace between HTML elements helps make code easier to read while not changing how elements appear in the browser.
+Indentation also helps make code easier to read. It makes parent-child relationships visible.
+Comments are written in HTML using the following syntax: <!-- comment -->.
+They allow you to experiment with new code, without having to delete old code.

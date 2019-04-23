@@ -1,0 +1,79 @@
+
+	
+Console is a panel that displays messages, like erros
+
+In Javascript the console keyword refers to an object, a collection of data and actions
+that we can use in our code.
+
+Keywords are built into Javascript Lang. Computer will recognize and respond according
+
+Console.log() - Whats put in paranthesis will get printed/logged to the console
+Useful to print values to console so we can see the work that we're doing
+
+Writing comments in your code that the computer will ignore as our program runs.
+
+A single line comment will comment out a single line with // Symbol before it
+can also use after a line of code
+
+A multi-Line comment will comment out multiple lines using /* at the beginning and
+*/ at the end of the comment
+Can also use to comment something out in the middle of code.
+
+Different Data types or Classifactions for data used in programming
+There are seven Fundamental data types
+
+1. Numbers, Any number including numbers with decimals.
+2. String. Any grouping of characters on your keyboard.(Letters,numbers,spaces,symbols)
+surrounded by Single quotes ' ...' or double quotes "..." String = Text
+
+3.Boolean. Has two possible values either True or False (Without Quotes)
+Used alot for yes or no questions
+
+4.Null - Represents intentional Absensce of a value and is represented by keyword Null
+
+5. Undefined. Represents absence of a value though it has a difference use than null
+represented by Undefined
+
+6.Symbol. A newfeature to the language. Unique Identifiers. useful in more complex coding.
+
+7. Object: Collections of related data
+
+First 6 types are considered Primitive Data Types.
+
+An Operator is a character that performs a task in code.
+Arithmetic Operators that allow you to perform Math Calculations on Numbers
+Add : +
+Subtract : -
+Multiply: *
+Divide: /
+Remainder: %
+If you want to print an equation as a string wrap them in quotes
+
+The remainder operator sometimes called Modulo, returns the numbers that remains
+when dividing
+
+String Concatenation is when adding one string to another right to left
+
+Console.log("Hello" + "There");
+
+Every String instance has a property called length that stores the number of characters
+in that string. You can retrieve propery info by attaching the text with a period and 
+property name.
+console.log('hello'.length);
+prints 5
+
+Methods are actions we can perform. Number of string methods. 
+Calling a Method to perform an action. Such as Text editing or True/False
+Attaching an Instance(Property) with a period (the dot operator) and paranthesis
+'example string'.methodName()
+console.log('hello'.toUpperCase())
+List of built-in String Methods https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/prototype
+Describes Keywords, Methods and Syntax
+
+Standard Built-in Objects
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+
+Built in objects that have call methods. Sometimes used to perform more complex Mathematical
+Operations than arithemtic. Built in Math object.
+Math.Random - Returns a random Number between 0 and 1. *100 Multiply result
+Math.floor - Makes output a whole number

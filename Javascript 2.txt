@@ -1,0 +1,88 @@
+In Programming a Variable Is a Container for a Value live in a computers memory.
+A variable holds whatever information you want to apply to a specific value such as 
+a username, account number, or personalized greeting.
+
+Variables allow you t label data with descriptive name to help programs be understood clearer
+Things you can do with variables:
+1. Create a varibale with a descriptive name.
+2. Store or Update information stored in a variable.
+3. Reference to "get" information store in a variable.
+Variables are not Values; They contain values and represent them with a name.
+Var., Let., and Const., are keywords to create/Declare Variabeles.
+
+Var - Short for variable. keyword to create or declare a new variable
+myName- is the variables Name.
+CamelCasing is groupig words into one. The firstword lower case and every word after
+will have its first letter uppercased (camelCaseEverything)
+= is the assignment operator, it assigns the value to the variable
+Variable is initlizaed with a value
+
+Once value is assigned to variable it can be delcared by referencing the variable name
+console.log(myName)
+
+1.Variable Names cannot start with numbers
+2.Variable Names are case sensitive so "myName" and "myname" would be different
+3.Variable Names cannot be the same as keywords
+Comprehensive list of keywords
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords
+More about Var
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var
+Var myName = "Bayo"
+
+Let = variable can be assigned a different value
+Let Meal = Tacos
+Console.log(Meal);
+
+Can declare a variable without assigning the variable in the value.
+Variable will be initlizaed with a value of Undefined.
+Can change a variable value after it has already been assigned
+Ex. 
+let changeMe = true;
+changeMe = false;
+console.log(changeMe)
+changeMe has been reassigned a value to false.
+
+Const variable is similar to Var and Let but cannot be reassigned because it is constant
+if you try to reassing you'll get a TypeError
+Const Variables MUSTbe assigned a value when delcared.
+If you need to reassign a variable use let or var, otherwise const is fine.
+
+Mathematical Assignment Operators
+Assigning variables with numbers in math problems to perform math operations.
++= Assignment operator to reassign and add current value. w +=1 or w = w + 1
+-+ assignment operator to subtract and reassign current value. x-=5 or X = X - 5
+*= assignment operator to multiply and ressaign current value. Y *=2 Or y = y * 2
+/= assignment operator to divide and reassign current value. z/= 2 or z = z /2
+
+Other Mathematical assignment operatoers include
+Increment Operator (++) will crease the value of the variable by 1.
+Example.
+let a = 10;
+a++;
+console.log(a); // Output: 11
+
+Decrement Operator (--) will decrease the value of the variable by 1.
+Example.
+let b = 20;
+b--;
+console.log(b); // Output: 19
+
+String Concatenation with variables
++ Operator can be used to combine two string values even if value are being store in variables
+
+Sting Interpolation - Can insert variables insto strings using template literals
+A template literal is wrapped by backticks ` ${}
+example
+let myName = 'Bayo';
+let myCity = 'Glenarden';
+
+console.log(`My name is ${myName}. My favorite city is ${myCity}.` );
+
+
+typeof Operator - Check the data type of a variables value. Will show you the fundamental
+data type
+example
+let newVariable = 'Playing around with typeof.';
+console.log(typeof newVariable)
+// Output: String
+

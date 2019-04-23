@@ -1,0 +1,258 @@
+HTML Provides strcuture to the content on a website such as images, texts or videos.
+HTML = HyperText Markup Language
+A markup language is a computer lanaguage that defines the strcture and presentation
+of raw text.
+in HTML the computer can interpret raw text that is wrapped in HTML Elements.
+Hypertext/Hyperlinks is text displayed on a computer or device that provides access to
+other text through links.
+
+</h1> </h1>
+
+HTML is a way to write content while CSS is a way to format that content.
+Css allows you to design the content written in HTML
+
+HTML is composed of Elements. Elements structure the webpage and define its content.
+
+A tag and the content between it is called and HTML element
+<p> Hello World </p>
+
+Html tag is the element name, surrounded by an opening(<) and closing (>) angle bracket
+
+Opening tag is the first HTML Tag used to start an HTML element. surrounded by
+opening and closing angle brackets.
+
+Content is the information contained between the tags
+Closing tag- is the second HTML tag used to end an HTML element. 
+Closing tags have a forward slash (/) inside of them, directly after the left angle bracket
+
+In coding p stands for paragraph
+<img> is a self-closing tag
+
+<p>, <div>, and <span> elements can contain text whereas elements like <ul> or <ol> should only contain <li> elements as direct children.
+Block level tags like the <div> can contain all tags that can exist within the <body> 
+(in other words, we can nest other elements within a <div>) 
+whereas self-closing tags like <img> can not contain any content at all
+
+HTML is a parent, and all elements that follow are children. BODY is a direct child of HTML, 
+and only one of a handful that are allowed. Everything the user sees will be contained in the body of the document. 
+
+html
+* head
+* body
+    + div
+        + p
+            + text node
+        + text node
+    + text node
+    
+The root of the tree is html, the trunk, body. DIV is a branch node, and P a leaf node off that, 
+with the text being the surface of the leaf. Note that the user sees the leaves of the tree. 
+
+Body Element is one of the Key HTML Elements used to build a webpage.
+<body> </body>
+Once the file has a body many different types of content can be added 
+Such as: text, images and buttons.
+
+You would add code between opening and closing body tags
+   
+   
+Understanding HTML hierarchy is important because child elements can inherit behavior 
+and styling from their parent element. You'll learn more about webpage hierarchy 
+in when you start digging into CSS   
+
+that <div> elements are often used to group related content. 
+
+The HTML <body> Element represents the content of an HTML document. There can be only one <body> element in a documenT
+
+Headings are used to describe content.
+
+In HTML there are six different headings or heading elements. Headings can be used for a varitey of purposes.
+like titling sections, articles or other forms of content.
+
+They are ordered from largest to smallest in size.
+
+<h1> — used for main headings. All other smaller headings are used for subheadings.
+<h2>
+<h3>
+<h4>
+<h5>
+<h6>
+
+
+the <title> tag can only be used within the <head> element and (unlike the h1-h6 elements) is never used to create a heading hierarchy within the <body> of an HTML document. 
+The content of the <title> tag will display within a window tab but not within the page itself.
+
+
+<div> Is short for "division" or a containter that divides the page into sections. Sections are useful for grouping elements in HTML
+<div> can contain any text or HTML elements such as links, images, or videos.
+
+Always add two spaces of identation when you nest elements inside of <div> for better readability
+
+When using <div> tags as containers, it is true that our nesting might become more complex. However, 
+the benefit is that if we create a thoughtful HTML structure we can more readily parse and target related content. 
+In other words, there is often a trade-off between complexity and either readability or targetability. 
+As developers, we want to find the right balance between creating enough coherent structure 
+to enhance readability and targetability without venturing into
+
+If we want to expand and Elements tag we can do so using Attribute.
+Attributes are content added to the opening tag of an element and can be used in several different ways
+from providing information to changing styling.
+Two parts of Attributes
+The Name of the Attribute
+The Value of the Attribute
+
+Commonly used attribute is id, Id attribute is used to specify diffrent content like <div>
+it is help ful when you use an element more than once.
+Ids have different purposes in HTML. Identify Content on our page
+
+When adding an id to a <div> we place it in the opening tag
+
+the id attribute uniquely identifies an element whereas the class attribute identifies a whole group of elements. 
+This labeling information can then be used to target content for styling, scripting, or (for the id attribute) linking. 
+For more information about these attributes, check out classes vs ids https://www.codecademy.com/articles/classes-vs-ids
+
+Global Attributes
+https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes
+
+HTML Attribute Ref.
+https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
+
+If you want to display text in HTML, you can use Paragraph <p></p> or <span></span>
+
+Paragraph <p> contain a block of plain text while
+<span> contains short pieces of text or other HTML. Used to seperate small pieces of content that are on the same line as other content.
+
+It's best to use a <span> element when you want to target a specific piece of content that is inline, or on the same line as other text. 
+If you want to divide your content into blocks, it's better to use a <div>
+
+<div>
+  <h1>Technology</h1>
+</div>
+<div>
+  <p><span>Self-driving cars</span> are anticipated to replace up to 2 million jobs over the next two decades.</p>
+</div>
+
+In the example above, there are two different <div>. The second <div> contains a <p> with <span>Self-driving cars</span>. 
+This <span> element separates "Self-driving cars" from the rest of the text in the paragraph
+
+As the exercise alludes to, there exists block-level elements (<div>, <p>, etc.) and inline-level elements (<span>, etc). One of the big differences between these two types of elements is that a block element will take up the entire width of its containing element. This means that by default <div> and <p> elements will push sibling elements to a new line or section of the page.
+
+On the other hand, inline elements make more conservative use of space. 
+They take up only as much space as they need and will not force surrounding content to a new line
+
+You can style text using HTML tags. 
+<em></em> tag emphasizes text
+<strong></strong> tag highlights important text
+
+The <em> tag will generally render as italic emphasis.
+The <strong> will generally render as bold emphasis
+
+<p><strong>The Nile River</strong> is the <em>longest</em> river in the world, measuring over 6,850 kilometers long 
+(approximately 4,260 miles).</p>
+
+
+In this example, the <strong> and <em> tags are used to emphasize the text to produce the following:
+
+The Nile River is the longest river in the world, measuring over 6,850 kilometers long (approximately 4,260 miles).
+
+A key component of a web browser is its rendering engine.
+
+A style sheet is a CSS document which specififies the presentation of the content described by associated HTML
+Style Sheets style our web pages.
+
+Spacing between code in an HTML file doesnt affect the positioning of elements in the browser.
+
+To modify spacing in the browser yu can use HTML's Line Break element <br>
+Line break element is only composed of a starting tag. can be used anywhere in html and a line break will be shown in the browser.
+
+You can also display content in an easy-to-read list.
+You can use an Unordered list tag <ul> to create a list of items in no particular order
+an Unordered list outlines individual list items with a bullet point
+
+<ul> element should not hold raw text and wont automatically format raw text into unordered list of items
+individual list items must be added to the unordered list using the <li> tag.
+The <li> or list item tag is used to describe an item in a list.
+
+<ul>
+  <li>Limes</li>
+  <li>Tortillas</li>
+  <li>Chicken</li>
+</ul>
+
+In the example above, the list was created using the <ul> tag and all individual list items were added using <li> tags.
+
+The output will look like this:
+
+Limes
+Tortillas
+Chicken
+
+The <li> element can be a direct child of either the <ul> or the <ol> elements but it should never exist outside of either of these parent elements.
+
+<ol> is Ordered lists and each list item is Numbered.
+Look for <ul> <li> <menu>
+https://html.spec.whatwg.org/multipage/grouping-content.html#the-ol-element
+
+<ol>
+  <li>Preheat the oven to 350 degrees.</li>
+  <li>Mix whole wheat flour, baking soda, and salt.</li>
+  <li>Cream the butter, sugar in separate bowl.</li>
+  <li>Add eggs and vanilla extract to bowl.</li>
+</ol>
+
+The output will look like this:
+
+1.Preheat the oven to 350 degrees.
+2.Mix whole wheat flour, baking soda, and salt.
+3.Cream the butter, sugar in separate bowl.
+4.Add eggs and vanilla extract to bowl.
+
+The <li> element can contain any element which is valid within the <body> tag. 
+This means that we can have lists of videos, images, songs, hyperlinks, or any combination thereof. In fact, we can even have lists of lists!
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type
+
+The <img> Allows you to add an image to a web page.
+<img> is a self-closing tag. end of the <img> tag has a forward slash /.
+
+The <img> tag has a required attribute called src. The src attribute must be set to the image's source, or the location of the image. 
+In this case, the value of src must be the uniform resource locator (URL) of the image. A URL is the web address or local address where a file is stored
+<src> = source
+
+<img src="imgage-location.jpg" />
+
+The Alt attribute which means "Alternative Text" brings meaning to the images on our sites
+The alt attribute can be added to the img tag just like the src attribute
+The value of the alt should be the describtion of the image.
+
+<img src="#" alt="A field of yellow sunflowers" />
+
+Alt serves the purpose of giving a description of the image incase the image fails to load on a web page.
+Screen reading software can read the images description
+Helps with Search Engine Optimization
+Having alt attributes can improve the ranking of your site.
+
+Html also supports displaying Videos
+<video> tag requires a src attribute with a link to the video source
+<video> requires an opening and closing tag </video>
+After the src attribute, the width and height attributes are used to set the size of the video displayed in the browser. 
+The controls attribute instructs the browser to include basic video controls: pause, play and skip
+
+Boolean attributes have true/false conditions. Including a boolean attribute within an element signifies the condition is true (or on) 
+while omitting it signifies the condition is false (or off
+
+We do have an alternative to alt (alternate text) that works across all browsers, the title attribute is valid on the VIDEO element
+
+Video Elements
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
+https://www.w3.org/
+
+We declare a title, then we have start & end point for it, <title> </title>
+We write a paragraph just for others to see, then we use <p> and close it with </p>
+We declare a specific piece of this text for e.g. to be in French. We then use<span> & close it as </span>
+We declare some words to be in bold or italics, again we have start & end of the text we want to format, so <strong> & </strong> <em> & </em>
+We group elements, again we need to declare which items are to be grouped together. So again, we have an open close case <div> </div>. Same when we create lists, ordered or unordered ones.
+Whereas,
+
+We insert a line break in a specific point, so we say <br> once. A line break is going to be formatted, without any other need.
+We insert an image in a specific point, so we say <img> once. Again, there’s no need to close anything, as we say <br> and <img> are self-closing tags
